@@ -1,0 +1,397 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #EFEEE5; /* Off-white */
+    color: #333; /* Black text */
+}
+
+/* HEADER */
+header {
+    background: #3D0066; /* Deep Purple */
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #D4C2F0;
+}
+section {
+    padding: 100px 20px; /* Increased vertical padding */
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #EFEEE5; /* Off-white */
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: -0.8px;
+    color: #333; /* Black */
+}
+
+.hero h2 {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333; /* Black */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333; /* Black */
+}
+
+/* BUTTON */
+a.button {
+    display: inline-block;
+    background: #3D0066; /* Deep Purple */
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+a.button:hover {
+    background: #5B1A99; /* Slightly lighter deep purple */
+}
+
+/* SERVICES SECTION */
+.services {
+    background: #EFEEE5; /* Off-white background */
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    color: #333; /* Black */
+    margin-bottom: 20px;
+}
+
+/* CHECKLIST STYLE */
+.service-list {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.service-list li {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* STYLISH CHECKMARK */
+.checkmark {
+    color: #3D0066; /* Deep Purple */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* CONTACT SECTION */
+.contact {
+    padding: 120px 20px;
+    text-align: center; /* Center align everything */
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #333; /* Black */
+    text-align: center; /* Ensures title is centered */
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333; /* Black */
+}
+
+/* FOOTER */
+footer {
+    background: #3D0066; /* Deep Purple */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* FADE-IN ANIMATION */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* SERVICES PAGE */
+.services-page {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.service {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.service h2 {
+    color: #3D0066;
+    margin-bottom: 10px;
+}
+
+.service ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.service ul li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* PRICING SECTION */
+.pricing {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.pricing h2 {
+    color: #3D0066;
+    margin-bottom: 15px;
+}
+
+.pricing ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+a.button {
+    display: inline-block;
+    background: #3D0066;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+a.button:hover {
+    background: #5B1A99;
+}
+/* ABOUT PAGE */
+.about-page {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.about-page h1 {
+    font-size: 2.5rem;
+    color: #3D0066;
+    margin-bottom: 20px;
+}
+
+/* ABOUT CONTENT */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.bio {
+    max-width: 700px;
+    text-align: center;
+}
+
+.bio p {
+    font-size: 1.3rem;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.about-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+a.button {
+    display: inline-block;
+    background: #3D0066;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+a.button:hover {
+    background: #5B1A99;
+}
+
+/* LINKEDIN BUTTON */
+a.linkedin {
+    background: #0077B5; /* LinkedIn blue */
+}
+
+a.linkedin:hover {
+    background: #005582;
+}
+/* CONTACT PAGE */
+.contact-page {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.contact-page h1, .contact-page h2 {
+    color: #3D0066;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.contact-info a {
+    color: #3D0066;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* CONTACT FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    display: inline-block;
+    background: #3D0066;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5B1A99;
+}
