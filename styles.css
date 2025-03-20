@@ -395,3 +395,15 @@ button {
 button:hover {
     background: #5B1A99;
 }
+/* Center the Logo Above the Hero Title */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Space between logo and "Function to Future" */
+}
+
+.logo {
+    height: 80px; /* Adjust size as needed */
+    width: auto;
+}
