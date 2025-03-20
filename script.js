@@ -22,3 +22,25 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(section);
     });
 });
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent page refresh
+
+    var form = this;
+    var formData = new FormData(form);
+
+    fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+    }).then(response => {
+        if (response.ok) {
+            document.getElementById("success-message").style.display = "block";
+            form.reset(); // Clear form fields
+        } else {
+            alert("Oops! Something went wrong.");
+        }
+    }).catch(error => {
+        alert("Error submitting form.");
+    });
+});
