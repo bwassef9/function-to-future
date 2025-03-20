@@ -407,3 +407,37 @@ button:hover {
     height: 80px; /* Adjust size as needed */
     width: auto;
 }
+/* Social Media Buttons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #3D0066; /* Default dark purple */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.social-btn i {
+    font-size: 1.5rem;
+}
+
+/* Social Media Colors */
+.linkedin { background: #0077b5; } /* LinkedIn Blue */
+.tiktok { background: #000; } /* TikTok Black */
+.youtube { background: #FF0000; } /* YouTube Red */
+.twitter { background: #1DA1F2; } /* Twitter Blue */
+
+.social-btn:hover {
+    opacity: 0.8;
+}
